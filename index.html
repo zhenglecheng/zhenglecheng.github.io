@@ -1,0 +1,662 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+
+<head>
+  <meta name=viewport content="width=1200">
+  <meta name="generator" content="HTML Tidy for Linux/x86 (vers 11 February 2007), see www.w3.org">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha256-DF7Zhf293AJxJNTmh5zhoYYIMs2oXitRfBjY+9L//AY=" crossorigin="anonymous">
+  <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/mdbootstrap@4.20.0/css/mdb.min.css" integrity="sha256-jpjYvU3G3N6nrrBwXJoVEYI/0zw8htfFnhT9ljN3JJw=" crossorigin="anonymous"> -->
+  <style type="text/css">
+    /* Color scheme stolen from Sergey Karayev */
+
+    .button {
+    display: inline-block;
+    padding: 1px 20px;
+    text-align: center;
+    text-decoration: none;
+    color: 1772d0;
+    background-color: white;
+    border: 2px solid #1772d0;;
+    border-radius:20px;
+    padding: 1px 10px;
+    font-size: 12px;
+    /* box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); */
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+
+  .button:hover {
+    background-color: #5a6092;
+  }
+  
+    .container {
+    display: flex; /* 使用flexbox布局 */
+    /* align-items: center;  */
+    /* vertical-align: top; */
+    }
+
+
+    .icon {
+      background-color: #bc85d3; /* 调整颜色以匹配准确的色调 */
+      color: white;
+      font-size: 14px;
+      font-family: Arial, sans-serif;
+      padding: 6px 15px; /* 调整适当的间距 */
+      border-radius: 10px; /* 这提供了药丸形状 */
+      text-align: center;
+      margin-right: 20px;
+      margin-left: 0px;
+      margin-top: 0px;
+      box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* 添加阴影 */
+      height: 27px;
+}
+
+
+
+      nav {
+          background-color: #333;
+          color: #fff;
+          padding: 10px 0;
+          text-align: center;
+      }
+      
+      nav a {
+          text-decoration: none;
+          color: #fff;
+          font-weight: bold;
+          padding: 10px 20px;
+          margin: 0 15px;
+          border-radius: 5px;
+          transition: background-color 0.3s ease;
+      }
+      
+      nav a:hover {
+          background-color: #555;
+      }
+
+    a {
+      color: #1772d0;
+      text-decoration: none;
+    }
+
+    
+    
+    a:focus,
+    a:hover {
+      color: #f09228;
+      text-decoration: none;
+    }
+
+    
+    body,
+    td,
+    th,
+    tr,
+    p,
+    a {
+      font-family: 'Lato', Verdana, Helvetica, sans-serif;
+      font-size: 17px,
+    }
+    
+    strong {
+      font-family: 'Lato', Verdana, Helvetica, sans-serif;
+      font-size: 17px;
+    }
+    
+    heading {
+      font-family: 'Lato', Verdana, Helvetica, sans-serif;
+      font-size: 24px;
+    }
+    
+    papertitle {
+      font-family: 'Lato', Verdana, Helvetica, sans-serif;
+      font-size: 17px;
+      font-weight: 700
+    }
+    
+    name {
+      font-family: 'Lato', Verdana, Helvetica, sans-serif;
+      font-size: 34px;
+    }
+    
+    .one {
+      width: 160px;
+      height: 160px;
+      position: relative;
+    }
+    
+    .two {
+      width: 160px;
+      height: 160px;
+      position: absolute;
+      transition: opacity .2s ease-in-out;
+      -moz-transition: opacity .2s ease-in-out;
+      -webkit-transition: opacity .2s ease-in-out;
+    }
+    
+    .fade {
+      transition: opacity .2s ease-in-out;
+      -moz-transition: opacity .2s ease-in-out;
+      -webkit-transition: opacity .2s ease-in-out;
+    }
+    .grid-container {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 20px;
+    }
+    .text-block {
+      border: 1px solid #ddd;
+
+      padding: 10px;
+      text-align: center;
+    }
+    span.highlight {
+      background-color: #ffffd0;
+    }
+    
+  </style>
+  <link rel="icon" type="image/png" href="images/572.png">
+  <title>Tianxin Wei</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=us-ascii">
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+</head>
+
+<body>
+  <!-- 目录栏 -->
+  <nav>
+    <a href="#section1">Bio</a>
+    <a href="#section2">Education</a>
+    <a href="#section3">Work Experience</a>
+    <a href="#section4">News</a>
+    <a href="#section5">Publications </a>
+    <a href="#section6">Services & Awards</a>
+  </nav>
+  <table width="1000" border="0" align="center" cellspacing="0" cellpadding="0" id="section1">
+    <tr>
+      <td>
+        <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+          <tr>
+            <td width="70%" valign="middle">
+              <p align="center">
+                <name>Tianxin Wei</name>
+              </p>
+              <p>I am a third-year Ph.D. student advised by <a href="https://www.hejingrui.org/"> Prof. Jingrui He </a> at the University of Illinois Urbana-Champaign.   
+                Prior to joining UIUC in 2021, I earned my B.S. degree in Computer Science from University of Science and Technology of China, School of the Gifted Young. 
+              </p>
+                 
+              </p>
+              <p>
+                My research primarily centers on enhancing the trustworthiness and efficiency of machine learning algorithms across various modalities and disciplines, with the ultimate goal of making ML models more accessible and inclusive. My research interests covers a wide range of topics:
+                <ul>
+                  <li> <strong> Trustworthy</strong>:  bias, fairness, robustness, and transferability; </li>
+                  <li><strong>Efficiency</strong>: sampling and model (Vanilla and MoE Transformer) efficiency; </li>
+                  <li><strong>Multi-modality</strong>: modal interaction and fusion;</li>
+                  <li><strong>Knowledge-enhanced LLM</strong>: content/KG retrieval and knowledge fusion; </li>
+                  <li><strong>LLM Governance/Policy</strong>: technical strategies for implementing regulatory principles effectively (currently exploring!);</li>
+                  <li><strong>Applications</strong>: agriculture, recsys, and looking forward to more science applications.</li>
+                </ul>
+<!--                 <b>Looking for research internship opportunities for 2024 summer! Please contact me if you have any recruitment openings.</b> <br> <br> -->
+                Feel free to drop me an e-mail, if you are interested in my research and want to discuss relevant research topic or potential collaborations!
+              </p>
+              <p align=center>
+                <a href="https://weitianxin.github.io/files/CV_wtx.pdf">CV</a> &nbsp/&nbsp
+                <a href="mailto:twei10@illinois.edu">Email</a> &nbsp/&nbsp
+                <a href="https://scholar.google.com/citations?user=_LU2-kMAAAAJ&hl=zh-CN">Google Scholar</a> &nbsp/&nbsp
+                <a href="https://github.com/weitianxin">Github</a> &nbsp/&nbsp
+                <a href="https://twitter.com/wei_tianxin">Twitter</a> &nbsp/&nbsp
+                <a href="https://www.linkedin.com/in/tianxin-wei-7063a2180/">Linkedin</a> &nbsp
+              </p>
+            </td>
+            <td width="30%">
+              <img src="images/wtx_mori_2.jpg" class="img-fluid z-depth-1 rounded-circle" width="100%">
+            </td>
+          </tr>
+        </table>
+        
+
+
+        
+        <!-- Education -->
+        <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20" id="section2">
+          <tbody><tr>
+            <td width="100%" valign="middle">
+              <heading>Education</heading>
+              <hr>
+              <table>
+                <tbody><tr>
+                    <td width="90%">
+                        <br>
+                        <strong>Ph.D.</strong> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp2021 - 2026 (expected)  <br> 
+                        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp &nbsp &nbsp&nbsp &nbsp &nbsp &nbsp&nbsp&nbsp University of Illinois Urbana-Champaign (UIUC)<br>
+                        <!-- &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp &nbsp &nbsp&nbsp &nbsp &nbsp &nbsp&nbsp&nbsp Ph.D. student in Information Science -->
+                        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp &nbsp &nbsp&nbsp &nbsp &nbsp &nbsp&nbsp&nbsp Advisor: <a href="https://cseweb.ucsd.edu/~jmcauley/">Prof. Jingrui He</a>
+                    </td>
+                    <td width="10%">
+                      <img src="images/uiuc.png" width="85%" style="display: block; margin-left: auto; margin-right: auto;">
+                    </td>
+                  </tr>
+                  <tr>
+                  <td width="90%">
+                      <br>
+                      <strong> B.S. </strong> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp  2016 -  2020 <br>
+                      &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp &nbsp &nbsp&nbsp &nbsp &nbsp &nbsp&nbsp&nbsp University of Science and Technology (USTC)<br>
+                      &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp &nbsp &nbsp&nbsp &nbsp &nbsp &nbsp&nbsp&nbsp School of the Gifted Young<br> 
+                      &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp &nbsp &nbsp&nbsp &nbsp &nbsp &nbsp&nbsp&nbsp Advisor: <a href="https://hexiangnan.github.io/">Prof. Xiangnan He</a>
+                  </td>
+                  <td width="10%">
+                    <img src="images/ustc.png" width="85%" style="display: block; margin-left: auto; margin-right: auto;">
+                  </td>
+                </tr>
+                <tr>
+                  <!-- <td width="90%">
+                      &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp &nbsp &nbsp&nbsp &nbsp &nbsp &nbsp&nbsp&nbsp School of Life Science, Beijing Normal University, China<br>
+                      &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp &nbsp &nbsp&nbsp &nbsp &nbsp &nbsp&nbsp&nbsp Biology Sciencee<br>
+                      &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp &nbsp &nbsp&nbsp &nbsp &nbsp &nbsp&nbsp&nbsp Sept.2015 to Sept. 2016 
+                  </td> -->
+                  <!--
+                  <td width="10%">
+                    <img src="images/mit-logo.png" width="100%" style="display: block; margin-left: auto; margin-right: auto;">
+                  </td>
+                -->
+                </tr>
+              </tbody></table>
+            </td>
+          </tr>
+          </tbody></table>
+    
+          <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20" id="section3">
+            <tbody><tr>
+              <td width="100%" valign="middle">
+              <heading>Work Experience</heading>
+              <hr>
+              <table>
+                <tbody>
+<!--                   <tr>
+                    <td width="90%">
+                        <br><b>Amazon Search</b>, Urbana, IL<br>
+                          Research Intern &bull; fall 2023<br>
+                          <i> Effective Prompting of Multi-modal Large Langauge Models</i><br>
+                          Main Advisors: <a href="https://scholar.google.com/citations?user=u1PEv-QAAAAJ&hl=zh-CN"> Dr. Xianfeng Tang </a> at Amazon; <a href="https://suhangwang.ist.psu.edu/"> Prof. Suhang Wang</a> at PSU </a><br>
+                    </td>
+        
+                    <td width="50%">
+                          <img src="images/amazon.png" width="100%" style="display: block; margin-left: auto; margin-right: auto;">
+                    </td>
+                </tr> -->
+  
+                  <tr>
+                    <td width="90%">
+                        <br><b>Amazon Search</b>, Palo Alto, CA<br>
+  
+                          Research Intern &bull; Aug.-Dec. 2023<br>
+                          <i> Multi-modal Large Langauge Models for Personalization</i><br>
+                          <i> Two papers published at ICLR'24 and, WWW'24 (Oral). Two in submission. </i><br>
+                          Main Advisors: <a href="https://scholar.google.com/citations?user=u1PEv-QAAAAJ&hl=zh-CN"> Dr. Xianfeng Tang </a> at Amazon; <a href="https://suhangwang.ist.psu.edu/"> Prof. Suhang Wang</a> at PSU </a> <br>
+                      
+                    </td>
+        
+                    <td width="50%">
+                          <img src="images/amazon.png" width="100%" style="display: block; margin-left: auto; margin-right: auto;">
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+          </td>
+        </tr>
+        </tbody></table>
+
+        <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20" id="section4">
+          <tbody><tr>
+            <td width="100%" valign="middle">
+              <heading>News</heading>
+              <hr>
+              <div class="table-responsive" style="max-height: 9.5vw;">
+                <table class="table table-sm table-borderless" >
+                  <tr>
+                    <th scope="row">May, 2024</th>
+                    <td>
+                         One papers accepted @ KDD’24.              
+                    </td>
+                  </tr> 
+                  <tr>
+                    <th scope="row">May, 2024</th>
+                    <td>
+                         Two papers accepted @ ICML’24.              
+                    </td>
+                  </tr> 
+                  <tr>
+                    <th scope="row">Jan, 2024</th>
+                    <td>
+                         One paper <a href="https://arxiv.org/abs/2311.09134">RIPOR</a> (Scalable and effective generative retrieval) accepted @ WWW’24.              
+                    </td>
+                  </tr> 
+
+                  <tr>
+                    <th scope="row">Jan, 2024</th>
+                    <td>
+                      One paper <a href="https://openreview.net/forum?id=khAE1sTMdX" style="color: #1772d0">UniMP</a> (multi-modal personalization including recommendation and search, etc.) accepted @ ICLR’24.              
+                    </td>
+                  </tr> 
+
+                  <tr>
+                    <th scope="row">Dec, 2023</th>
+                    <td>
+                      One paper accepted @ AAAI’24. Will attend NeurIPS'23 between Dec. 9-16. See you there!              
+                    </td>
+                  </tr> 
+
+                  <tr>
+                    <th scope="row">Oct, 2023</th>
+                    <td>
+                      Awarded the NeurIPS’23 Scholar Award. Thanks to NeurIPS!          
+                    </td>
+                  </tr> 
+
+                  <tr>
+                    <th scope="row">Sep, 2023</th>
+                    <td>
+                      Two papers (Test-time personalization and bandit scheduler for meta-learning) accepted @ NeurIPS’23.         
+                    </td>
+                  </tr> 
+
+                  <tr>
+                    <th scope="row">Aug, 2023</th>
+                    <td>
+                      One paper <a href="https://weitianxin.github.io/files/CIKM23.pdf" style="color: #1772d0">BNCL</a> accepted @ CIKM’23.         
+                    </td>
+                  </tr> 
+
+                  <tr>
+                    <th scope="row">May, 2023</th>
+                    <td>
+                      Received the ICML’23 Grant Award. Thanks to ICML!         
+                    </td>
+                  </tr> 
+
+                  <tr>
+                    <th scope="row">Apr, 2023</th>
+                    <td>
+                      <a href="https://weitianxin.github.io/files/mlp fusion.pdf" style="color: #1772d0">MLP Fusion</a> (NTK-approximating MLP Fusion for efficient learning) accepted @ ICML’23.          
+                    </td>
+                  </tr> 
+
+                  <tr>
+                    <th scope="row">Mar, 2023</th>
+                    <td>
+                      Will join Amazon Search team as an applied scientist intern this summer. See you in Palo Alto!         
+                    </td>
+                  </tr> 
+
+                  <tr>
+                    <th scope="row">Dec, 2022</th>
+                    <td>
+                      Collect a curated list of papers on the distribution shift. Check out at <a href="https://github.com/weitianxin/awesome-distribution-shift" style="color: #1772d0">awesome-distribution-shift</a>!        
+                    </td>
+                  </tr> 
+
+                  <tr>
+                    <th scope="row">Oct, 2022</th>
+                    <td>
+                      Awarded the NeurIPS’22 Scholar Award. Thanks to NeurIPS!          
+                    </td>
+                  </tr> 
+
+                  <tr>
+                    <th scope="row">Oct, 2022</th>
+                    <td>
+                      <a href="https://arxiv.org/abs/2210.03801" style="color: #1772d0">HyperGCL</a> (contrastive learning on hypergraphs) accepted @ NeurIPS’22.         
+                    </td>
+                  </tr> 
+
+                  <tr>
+                    <th scope="row">May, 2022</th>
+                    <td>
+                      <a href="https://arxiv.org/abs/2206.04789" style="color: #1772d0">CLOVER</a> (comprehensive fairness of cold-start recsys) accepted @ KDD’22.         
+                    </td>
+                  </tr> 
+
+                  <tr>
+                    <th scope="row">Jul, 2021</th>
+                    <td>
+                      Awarded the SIGIR 2021 Best Paper Honorable Mention. Thanks to SIGIR!         
+                    </td>
+                  </tr> 
+
+                  <tr>
+                    <th scope="row">May, 2021</th>
+                    <td>
+                      <a href="https://arxiv.org/abs/2010.15363" style="color: #1772d0">MACR</a> (popularity debias with causal counterfactual reasoning) accepted @ KDD’21.         
+                    </td>
+                  </tr> 
+
+                  <tr>
+                    <th scope="row">Apr, 2021</th>
+                    <td>
+                      <a href="https://arxiv.org/abs/2105.06067" style="color: #1772d0">PDA</a> (popularity adjusted deconfounded training with causal intervention) accepted @ SIGIR’21.         
+                    </td>
+                  </tr> 
+
+                  <tr>
+                    <th scope="row">Aug, 2020</th>
+                    <td>
+                      <a href="https://weitianxin.github.io/files/ICDM_2020_MetaCF.pdf" style="color: #1772d0">MetaCF</a> (graph meta-learning for cold-start recsys) accepted @ ICDM’20. Internship work at <a href="https://web.cs.ucla.edu/~yzsun/">UCLA</a>.         
+                    </td>
+                  </tr> 
+                </table>
+            </tr>
+          </tbody></table>
+
+      
+        <!-- research -->
+        <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20" id="section5">
+          <tr>
+            <td width="100%" valign="middle">
+              <heading>Publications (*equal contribution)</heading>
+              <hr>
+              &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<strong>Conference</strong>
+            </td>
+             
+          </tr>
+        </table>
+
+        <!-- <div class="container">
+          <div class="icon">NeurIPS</div>
+          <div><a href="https://openreview.net/forum?id=khAE1sTMdX"><strong>Towards Unified Multi-Modal Personalization: Large Vision-Language Models for Generative Recommendation and Beyond</strong></a>
+            <p><u>Tianxin Wei</u>, Bowen Jin, Ruirui Li, Hansi Zeng, Zhengyang Wang, Jianhui Sun, Qingyu Yin, Hanqing Lu, Suhang Wang, Jingrui He, Xianfeng Tang</p>
+            <p>In the ICLR 2024 (Full Research, AR: 31%). [<a href="TBD">Code</a>]</p>
+            <img src="images/tag-multimodal.png" width="9%"> <img src="images/tag-transferability.png" width="15%"></div>
+        </div> -->
+
+        <ul>
+          <li>
+            <a href="https://arxiv.org/abs/2201.13395"><strong>Meta Clustering of Neural Bandits</strong></a>
+            <p>Yikun Ban, Yunzhe Qi, <u>Tianxin Wei</u>, Lihui Liu, Jingrui He</p>
+            <p><em>KDD 2024. (Full Research, AR: 20%).</em> <a href="TBD" class="button">Code</a></p>
+            <img src="images/tag-sample_efficiency.png" width="12.5%">
+        </li>    
+          
+          <li>
+            <a href="TBD"><strong>Graph Mixup on Approximate Gromov–Wasserstein Geodesics</strong></a>
+            <p>Zhichen Zeng, Ruizhong Qiu, Zhe Xu, Zhining Liu, Yuchen Yan, <u>Tianxin Wei</u>, Lei Ying, Jingrui He, Hanghang Tong</p>
+            <p><em>ICML 2024 (Full Research, AR: 27.5%).</em> <a href="TBD" class="button">Code</a></p>
+            <img src="images/tag-robustness.png" width="13%">
+          </li>
+          
+          <li>
+            <a href="https://arxiv.org/pdf/2310.07815v1.pdf"><strong>Language Models as Semantic Indexers</strong></a>
+            <p>Bowen Jin, Hansi Zeng, Guoyin Wang, Xiusi Chen, <u>Tianxin Wei</u>, Ruirui Li, Zhengyang Wang, Zheng Li, Yang Li, Hanqing Lu, Suhang Wang, Jiawei Han, Xianfeng Tang</p>
+            <p><em>ICML 2024 (Full Research, AR: 27.5%).</em> <a href="https://github.com/petergriffinjin/lmindexer" class="button">Code</a></p>
+            <img src="images/tag-retrieval.png" width="13%">
+          </li>
+          
+          <li> <a href="https://openreview.net/pdf?id=khAE1sTMdX"><strong>Towards Unified Multi-Modal Personalization: Large Vision-Language Models for Generative Recommendation and Beyond</strong></p></a>
+            <p><u>Tianxin Wei</u>, Bowen Jin, Ruirui Li, Hansi Zeng, Zhengyang Wang, Jianhui Sun, Qingyu Yin, Hanqing Lu, Suhang Wang, Jingrui He, Xianfeng Tang</p>
+            <p><em>ICLR 2024 (Full Research, AR: 31%).</em> <a href="https://github.com/weitianxin/UniMP" class="button">Code</a></p>
+            <img src="images/tag-multimodal.png" width="9%"> <img src="images/tag-transferability.png" width="15%">
+
+          <li> <a href="https://arxiv.org/pdf/2311.09134.pdf"><strong>Scalable and Effective Generative Information Retrieval</strong></a>
+            <p>Hansi Zeng, Chen Luo, Bowen Jin, Sheikh Muhammad Sarwar, <u>Tianxin Wei</u>, Hamed Zamani</p>
+            <p><em>WWW 2024 (Oral, Full Research, AR: 20.2%).</em> <a href="https://github.com/hansizeng/ripor" class="button">Code</a></p>
+            <img src="images/tag-retrieval.png" width="13%">
+
+          <li> <a href="TBD"><strong>TAU: Trajectory Data Augmentation with Uncertainty for Next POI Recommendation</strong></a>
+                      <p>Zhuang Zhuang, <u>Tianxin Wei</u>, Lingbo Liu, Heng Qi, Yanming Shen, Baocai Yin</p>
+                      <p><em>AAAI 2024 (Full Research, AR: 24%).</em> <a href="TBD" class="button">Code</a></p>
+                      <img src="images/tag-robustness.png" width="14.5%">      <img src="images/tag-application.png" width="11%">
+
+          <li> <a href="https://proceedings.neurips.cc/paper_files/paper/2023/hash/c9e6ac15e689e06139d7b39e1667b165-Abstract-Conference.html"><strong>Meta-Learning with Neural Bandit Scheduler</strong></a>
+                      <p>Yunzhe Qi, Yikun Ban, <u>Tianxin Wei</u>, Jiaru Zou, Huaxiu Yao, Jingrui He</p>
+                      <p><em>NeurIPS 2023 (Full Research, AR: 26.1%).</em> <a href="https://github.com/yunzhe0306/bandit_task_scheduler" class="button">Code</a></p>
+                      <img src="images/tag-sample_efficiency.png" width="12.5%">
+
+          <li> <a href="https://arxiv.org/abs/2310.18816"><strong>Adaptive Test-Time Personalization for Federated Learning</strong></a>
+                      <p>Wenxuan Bao*, <u>Tianxin Wei</u>*, Haohan Wang, Jingrui He</p>
+                      <p><em>NeurIPS 2023 (Full Research, AR: 26.1%).</em> <a href="https://github.com/baowenxuan/ATP"  class="button">Code</a></p>
+                      <img src="images/tag-robustness.png" width="14.5%">
+
+          <li> <a href="https://arxiv.org/abs/2311.16334"><strong>Robust Basket Recommendation via Noise-tolerated Graph Contrastive Learning</strong></a>
+                      <p>Xinrui He*, <u>Tianxin Wei</u>*, Jingrui He</p>
+                      <p><em>CIKM 2023 (Full Research, AR: 24.0%).</em> <a href="https://github.com/Xinrui17/BNCL" class="button">Code</a></p>
+                      <img src="images/tag-robustness.png" width="14.5%">      <img src="images/tag-application.png" width="11%">
+
+          <li> <a href="https://arxiv.org/abs/2307.08941"><strong>NTK-approximating MLP Fusion for Efficient Language Model Fine-tuning</strong></a>
+                      <p><u>Tianxin Wei</u>*, Zeming Guo*, Yifan Chen*, Jingrui He</p>
+                      <p><em>ICML 2023 (Full Research, AR: 27.9%).</em> <a href="https://github.com/weitianxin/mlp_fusion" class="button">Code</a></p>
+                      <img src="images/tag-model_efficiency.png" width="12.5%">
+
+          <li> <a href="https://arxiv.org/abs/2210.03801"><strong>Augmentations in Hypergraph Contrastive Learning: Fabricated and Generative</strong></a>
+                      <p><u>Tianxin Wei</u>*, Yuning You*, Tianlong Chen, Yang Shen, Jingrui He, Zhangyang Wang</p>
+                      <p><em>NeurIPS 2022 (Full Research, AR: 25.6%).</em> <a href="https://github.com/weitianxin/HyperGCL" class="button">Code</a> <a href="https://weitianxin.github.io/files/neurips22_hypergcl_appendix.pdf" class="button">Appendix</a></p>
+                      <img src="images/tag-robustness.png" width="14.5%">
+
+          <li> <a href="https://arxiv.org/abs/2206.04789"><strong>Comprehensive Fair Meta-learned Recommender System</strong></a>
+                      <p><u>Tianxin Wei</u>, Jingrui He</p>
+                      <p><em>KDD 2022 (Full Research, AR: 15.0%).</em> <a href="https://github.com/weitianxin/MACR" class="button">Code</a></p>
+                      <img src="images/tag-fairness.png" width="14.5%">
+
+          <li> <a href="https://arxiv.org/abs/2010.15363"><strong>Model-Agnostic Counterfactual Reasoning for Eliminating Popularity Bias in Recommender System</strong></a>
+                      <p><u>Tianxin Wei</u>, Fuli Feng, Jiawei Chen, Ziwei Wu, Jinfeng Yi, Xiangnan He</p>
+                      <p><em>KDD 2021 (Full Research, AR: 15.4%).</em> <a href="https://github.com/weitianxin/MACR" class="button">Code</a></p>
+                      <img src="images/tag-bias.png" width="14.5%"> 
+
+          <li> <a href="https://arxiv.org/abs/2105.06067"><strong>Causal Intervention for Leveraging Popularity Bias in Recommendation</strong></a>
+                      <p>Yang Zhang, Fuli Feng, Xiangnan He, <u>Tianxin Wei</u>, Chonggang Song, Guohui Ling and Yongdong Zhang</p>
+                      <p><em>SIGIR 2021 (Best Paper Honorable Mention, 1 out of All, Full Research, AR: 21%).</em> <a href="https://github.com/zyang1580/PDA" class="button">Code</a></p>
+                      <img src="images/tag-bias.png" width="14.5%">      <img src="images/tag-application.png" width="11%">
+
+          <li> <a href="https://weitianxin.github.io/files/ICDM_2020_MetaCF.pdf"><strong>Fast Adaptation for Cold-start Collaborative Filtering with Meta-learning</strong></a>
+                      <p><u>Tianxin Wei</u>, Ziwei Wu, Ruirui Li, Ziniu Hu, Fuli Feng, Xiangnan He, Yizhou Sun, and Wei Wang</p>
+                      <p><em>ICDM 2020 (Full Research, AR: 9.8%).</em> <a href="https://drive.google.com/file/d/1_UaPcCQLaEEWUCsMTRIgsvtWqorqsnUm/view?usp=sharing" class="button">Code</a></p>
+                      <img src="images/tag-transferability.png" width="15%">      <img src="images/tag-application.png" width="11%">
+
+          <li> <a href="https://www.springerprofessional.de/en/unpaired-multimodal-neural-machine-translation-via-reinforcement/19040758"><strong>Unpaired Multimodal Neural Machine Translation via Reinforcement Learning</strong></a>
+                      <p>Yijun Wang*, <u>Tianxin Wei</u>*, Qi Liu, Enhong Chen</p>
+                      <p><em>DASFAA 2021 (Full Research, AR: 20%).</em></p>
+                      <img src="images/tag-multimodal.png" width="9%">
+
+          <li> <a href="https://weitianxin.github.io/files/AAAI21_ARStock.pdf"><strong>AR-Stock: Deep Augmented Relational Stock Prediction</strong></a>
+                      <p><u>Tianxin Wei</u>, Yuning You, Tianlong Chen</p>
+                      <p><em>AAAI 2021 Workshop on Knowledge Discovery from Unstructured Data (Oral).</em> <a href="https://github.com/weitianxin/FiAI_AR-Stock" class="button">Code</a></p>
+                      <img src="images/tag-application.png" width="11%">
+        </ul>
+        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<strong>Journal</strong>
+        <br>
+        <br>
+        <ul>
+          <li>
+            <a href="http://sites.computer.org/debull/A23june/p80.pdf"><strong>Graph Contrastive Learning: An Odyssey towards Generalizable, Scalable and Principled Representation Learning on Graphs
+            </strong></a>
+                      <p>Yan Han, Yuning You, Wenqing Zheng, Scott Hoang, <u>Tianxin Wei</u>, Majdi Hassan, Tianlong Chen, Ying Ding, Yang Shen, Zhangyang Wang                      </p>
+                      <p><em>IEEE Data Engineering Bulletin.</em></p>
+                      <img src="images/tag-survey.png" width="8.5%">
+
+        </ul>
+
+        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<strong>Preprint</strong>
+        <br>
+        <br>
+         
+
+        <ul>
+
+          <li>
+            <a href="TBD"><strong>Parameter Compression for Large-scale Mixture-of-expert LLM</strong></a>
+            <p><em>preprint 2024.</em> <a href="TBD" class="button">Code</a></p>
+            <img src="images/tag-model_efficiency.png" width="12.5%">
+          </li> 
+
+          <li>
+            <a href="TBD"><strong>Connecting Domains and Contrasting Samples: A Ladder for Domain Generalization</strong></a>
+            <p><u>Tianxin Wei</u>*, Yifan Chen*, Xinrui He, Wenxuan Bao, Jingrui He</p>
+            <p><em>preprint 2023.</em> <a href="TBD" class="button">Code</a></p>
+            <img src="images/tag-robustness.png" width="14.5%">
+        </li>    
+
+        </ul>
+        
+        
+        
+        
+                  <!-- honors and awards -->  
+        <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20" id="section6">
+          <tbody><tr>
+            <td width="100%" valign="middle">
+              <heading>Services & Awards</heading>
+              <hr>
+              <br>
+              <strong>University Nomination (Top3) for Apple Scholar in AI/ML 2024</strong><br>
+              <strong>Conference Presentation Award, UIUC 2023</strong><br>
+              <strong>SIGIR 2021 Best Paper Honorable Mention</strong><br>
+              <strong>NeurIPS 2023 Scholar Award</strong><br>
+              <strong>NeurIPS 2022 Scholar Award</strong><br>
+              <strong>ICML 2023 Grant Award</strong><br>
+              <strong>Program Committee/Reviewer: CIKM (2021-2023), ICML (2022-2024), NeurIPS (2022-2023), ICLR (2023-2024), KDD (2023-2024), AAAI (2023-2024), WSDM 2023, ACL 2023, EMNLP 2023, LOG 2022 <br>
+              <strong>Journal Reviewer: TOIS, TKDE, DMKD, Machine Learning, TMLR</strong><br>
+            </td>
+          </tr>
+          </tbody></table>
+
+          <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+            <tbody>
+                <tr>
+                    <td width="100%" valign="middle">
+                        <heading>Pets</heading>
+                        <hr>
+                        <!-- <br> -->
+                        <!-- Tuantuan & Qiaoqiao -->
+                    </td>
+                </tr>
+                <tr>
+                    <td style="text-align: center;">
+                        <img src="images/pet2.jpg" class="img-fluid z-depth-1 rounded-circle" width="28%" style="display: inline-block;">
+                        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                        <img src="images/pet1.jpg" class="img-fluid z-depth-1 rounded-circle" width="28%" style="display: inline-block;">
+
+                      </td>
+                </tr>
+                
+            </tbody>
+        </table>
+        <script type="text/javascript" src="//rf.revolvermaps.com/0/0/6.js?i=5w8l886z2zy&amp;m=7&amp;c=e63100&amp;cr1=ffffff&amp;f=arial&amp;l=0&amp;bv=90&amp;lx=-420&amp;ly=420&amp;hi=20&amp;he=7&amp;hc=a8ddff&amp;rs=80" async="async"></script>
+
+        <br>
+        <br>
+
+        <!-- Education -->
+       <script type="text/javascript">
+          var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+          document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+        </script>
+        <script type="text/javascript">
+          try {
+            var pageTracker = _gat._getTracker("UA-7580334-1");
+            pageTracker._trackPageview();
+          } catch (err) {}
+        </script>
+        </td>
+    </tr>
+  </table>
+
+</body>
+
+</html>
